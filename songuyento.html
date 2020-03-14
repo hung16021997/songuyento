@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n=2;
+    let snt=1;
+    let number=0;
+    while (snt<=20) {
+        number=0;
+        for (let i = 2; i <= Math.sqrt(n); i++) {
+            if (n % i == 0) {
+                number++;
+
+                break;
+            }
+        }
+        if (number == 0){
+            document.write(" " + n);
+            snt++; }
+        n++;
+    }
+
+</script>
+</body>
+</html>
